@@ -1,6 +1,6 @@
 module diggerd
 
-go 1.22.5
+go 1.21.11
 
 require (
 	github.com/go-ole/go-ole v1.2.6 // indirect
