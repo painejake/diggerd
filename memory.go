@@ -1,4 +1,4 @@
-package diggerd
+package main
 
 import (
 	"fmt"
