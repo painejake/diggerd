@@ -40,14 +40,14 @@ func getMemoryStats(w http.ResponseWriter, r *http.Request) {
 
 // getCPUStats handles the JSON response containing the SystemCPU only
 func getCPUStats(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endpoint hit: /stats/cpu")
+	logMsg("/stats/cpu", r)
 	disableCors(&w)
 	json.NewEncoder(w).Encode(getCPUUsage())
 }
 
 // getNetStats handles the JSON response containing the SystemNet only
 func getNetStats(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endpoint hit: /stats/net")
+	logMsg("/stats/net", r)
 	disableCors(&w)
 	json.NewEncoder(w).Encode(getNetUsage())
 }

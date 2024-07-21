@@ -27,8 +27,8 @@ func (netStat *SystemNet) appendStat(infStat InterfaceStats) []InterfaceStats {
 	return netStat.Stats
 }
 
-// getCPUUsage will return the CPU usage as
-// a percentage for the host
+// getNetUsage will return the network stats for each
+// interface found on the system
 func getNetUsage() SystemNet {
 
 	netStats := SystemNet{}

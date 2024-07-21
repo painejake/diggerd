@@ -2,10 +2,12 @@
 
 Diggerd is a simple, lightweight, monitoring daemon serving the data via a JSON API written in Go designed to be super simple. Essentially a wrapper around [gopsutil](https://github.com/shirou/gopsutil). Used for simple monitoring of Raspberry Pi's and learning Go.
 
+Requires go 1.20+
+
 #### Building form source
 Fetch dependancies:
 ```sh
-$ go get .
+$ go get
 ```
 For production release:
 ```sh
